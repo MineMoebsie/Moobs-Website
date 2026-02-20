@@ -1,14 +1,23 @@
-var _____WB$wombat$assign$function_____=function(name){return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name))||self[name];};if(!self.__WB_pmw){self.__WB_pmw=function(obj){this.__WB_source=obj;return this;}}{
-let window = _____WB$wombat$assign$function_____("window");
-let self = _____WB$wombat$assign$function_____("self");
-let document = _____WB$wombat$assign$function_____("document");
-let location = _____WB$wombat$assign$function_____("location");
-let top = _____WB$wombat$assign$function_____("top");
-let parent = _____WB$wombat$assign$function_____("parent");
-let frames = _____WB$wombat$assign$function_____("frames");
-let opens = _____WB$wombat$assign$function_____("opens");
+// var _____WB$wombat$assign$function_____=function(name){return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name))||self[name];};if(!self.__WB_pmw){self.__WB_pmw=function(obj){this.__WB_source=obj;return this;}}{
+// let window = _____WB$wombat$assign$function_____("window");
+// let self = _____WB$wombat$assign$function_____("self");
+// let document = _____WB$wombat$assign$function_____("document");
+// let location = _____WB$wombat$assign$function_____("location");
+// let top = _____WB$wombat$assign$function_____("top");
+// let parent = _____WB$wombat$assign$function_____("parent");
+// let frames = _____WB$wombat$assign$function_____("frames");
+// let opens = _____WB$wombat$assign$function_____("opens");
 function ToggleDiv() {
   var x = document.getElementById("DIV");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+function toonKaarten() {
+  var x = document.getElementById("content");
   if (x.style.display === "block") {
     x.style.display = "none";
   } else {
@@ -53,7 +62,7 @@ function login() {
   }
 }
 
-}
+
 
 /*
      FILE ARCHIVED ON 08:27:33 Jul 01, 2025 AND RETRIEVED FROM THE
